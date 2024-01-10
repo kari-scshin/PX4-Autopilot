@@ -163,7 +163,9 @@ elif [ "$PX4_SIM_MODEL" = "jmavsim_iris" ] || [ "$(param show -q SYS_AUTOSTART)"
 	param set IMU_INTEG_RATE 250
 	./jmavsim_run.sh -l -r 250 &
 
-	simulator_mavlink start -h localhost $((4560+px4_instance))
+	# Seungchan 24.01.08.
+	#simulator_mavlink start -h localhost $((4560+px4_instance))
+	simulator_mavlink start -t "${PX4_SIM_HOST_ADDR}" $((4560+px4_instance))
 
 else
 	# otherwise start simulator (mavlink) module
