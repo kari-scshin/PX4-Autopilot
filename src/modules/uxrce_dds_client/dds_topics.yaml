@@ -67,8 +67,14 @@ publications:
 
   - topic: /fmu/out/vehicle_trajectory_waypoint_desired
     type: px4_msgs::msg::VehicleTrajectoryWaypoint
+# Seungchan 23.12.11
+  - topic: /fmu/out/landing_target_pose
+    type: px4_msgs::msg::LandingTargetPose
 
+  - topic: /fmu/out/irlock_report
+    type: px4_msgs::msg::IrlockReport
 # Create uORB::Publication
+
 subscriptions:
   - topic: /fmu/in/register_ext_component_request
     type: px4_msgs::msg::RegisterExtComponentRequest
