@@ -128,5 +128,19 @@
         "yaml.schemas": {
                 "${workspaceFolder}/validation/module_schema.yaml": "${workspaceFolder}/src/modules/*/module.yaml"
         },
-        "ros.distro": "humble"
+        "ros.distro": "humble",
+        "python.autoComplete.extraPaths": [
+                "/home/seungchan/ros2_kari_ws/install/kari_UAV_velcon/lib/python3.10/site-packages",
+                "/home/seungchan/ros2_kari_ws/install/UVINet_gremsy/lib/python3.10/site-packages",
+                "/home/seungchan/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages",
+                "/opt/ros/humble/lib/python3.10/site-packages",
+                "/opt/ros/humble/local/lib/python3.10/dist-packages"
+        ],
+        "python.analysis.extraPaths": [
+                "/home/seungchan/ros2_kari_ws/install/kari_UAV_velcon/lib/python3.10/site-packages",
+                "/home/seungchan/ros2_kari_ws/install/UVINet_gremsy/lib/python3.10/site-packages",
+                "/home/seungchan/ws_sensor_combined/install/px4_msgs/local/lib/python3.10/dist-packages",
+                "/opt/ros/humble/lib/python3.10/site-packages",
+                "/opt/ros/humble/local/lib/python3.10/dist-packages"
+        ]
 }
